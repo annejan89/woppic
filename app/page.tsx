@@ -26,7 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Search, ChevronDown, ChevronLeft, ChevronRight, Edit, Plus, Filter, Menu } from "lucide-react";
+import { Search, ChevronDown, ChevronLeft, ChevronRight, Plus, Filter } from "lucide-react";
 
 // Dummy data voor bestellingen
 const orders = [
@@ -215,7 +215,7 @@ export default function OrderPortal() {
       <div className="space-y-2">
         <p className="text-sm text-gray-800">{order.address}</p>
         <div className="flex items-center justify-between text-sm text-gray-600">
-          <span>{order.photos} foto's</span>
+          <span>{order.photos} foto&apos;s</span>
           <span>{order.date}</span>
         </div>
       </div>
@@ -315,7 +315,7 @@ export default function OrderPortal() {
                     Adres
                   </TableHead>
                   <TableHead className="w-32 font-medium text-black text-center px-3 py-2">
-                    Aantal Foto's
+                    Aantal Foto&apos;s
                   </TableHead>
                   <TableHead className="w-32 font-medium text-black px-3 py-2">
                     Status

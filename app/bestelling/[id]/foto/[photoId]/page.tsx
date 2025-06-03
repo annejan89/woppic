@@ -2,14 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
     ArrowLeft,
-    ChevronDown,
-    Edit,
-    Download,
-    X
+    ChevronDown
 } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -29,7 +26,6 @@ const photoData = {
 
 export default function PhotoDetailPage() {
     const params = useParams();
-    const router = useRouter();
     const [activeTab, setActiveTab] = useState("upload");
     const [isRejected, setIsRejected] = useState(false);
 
