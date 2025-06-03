@@ -125,7 +125,7 @@ const orders = [
 export default function OrderPortal() {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
-  const [currentPage, setCurrentPage] = useState(2);
+  const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const [statusFilter, setStatusFilter] = useState("all");
 
