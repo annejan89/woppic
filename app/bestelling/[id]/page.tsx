@@ -180,19 +180,6 @@ export default function OrderDetail() {
         }
     };
 
-    const getPhotoStatusText = (status: string) => {
-        switch (status) {
-            case 'normaal':
-                return 'Normaal';
-            case 'bewerkt':
-                return 'Bewerkt';
-            case 'afgekeurd':
-                return 'Afgekeurd';
-            default:
-                return status;
-        }
-    };
-
     return (
         <div className="min-h-screen bg-white">
             {/* Header */}
@@ -269,8 +256,8 @@ export default function OrderDetail() {
                                             <TableCell className="font-medium text-gray-600 py-3 px-4">Status</TableCell>
                                             <TableCell className="py-3 px-4">
                                                 <span className={`px-2 py-1 rounded-full text-xs font-medium ${order.status === "nieuw" ? "bg-blue-100 text-blue-800" :
-                                                        order.status === "in_progress" ? "bg-orange-100 text-orange-800" :
-                                                            "bg-green-100 text-green-800"
+                                                    order.status === "in_progress" ? "bg-orange-100 text-orange-800" :
+                                                        "bg-green-100 text-green-800"
                                                     }`}>
                                                     {order.status === "nieuw" ? "Nieuw" :
                                                         order.status === "in_progress" ? "In behandeling" : "Voltooid"}
